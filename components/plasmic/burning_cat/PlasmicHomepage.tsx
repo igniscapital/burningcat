@@ -235,7 +235,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Utilizing a burn fee with Solana Token Extensions, 4% of $CWIF are automatically burned from every on-chain transaction."
+                      "Utilizing a burn fee with Solana Token Extensions, 3% of $BCAT are automatically burned from every on-chain transaction."
                     }
                   </div>
                   <div
