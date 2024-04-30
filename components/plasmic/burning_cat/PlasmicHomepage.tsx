@@ -59,6 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
+
 import { useScreenVariants as useScreenVariants_6McVkayaZyRw } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 6McVKAYAZyRW/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -82,6 +84,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   section?: Flex__<"section">;
   columns?: Flex__<"div">;
   img?: Flex__<typeof PlasmicImg__>;
@@ -150,6 +153,19 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "Utilizing a burn fee with Solana Token Extensions, 4% of $CWIF are automatically burned from every on-chain transaction."
+            }
+            image={
+              "/plasmic/burning_cat/images/gFUtS400X400RemovebgPreviewpng.png"
+            }
+            title={"Burning Cat"}
+          />
+
           <section
             data-plasmic-name={"section"}
             data-plasmic-override={overrides.section}
@@ -278,7 +294,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "columns", "img", "h2"],
+  root: ["root", "pageMetadataOverride", "section", "columns", "img", "h2"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   section: ["section", "columns", "img", "h2"],
   columns: ["columns", "img", "h2"],
   img: ["img"],
@@ -289,6 +306,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   section: "section";
   columns: "div";
   img: typeof PlasmicImg__;
@@ -355,6 +373,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     section: makeNodeComponent("section"),
     columns: makeNodeComponent("columns"),
     img: makeNodeComponent("img"),
