@@ -55,6 +55,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .section {
     grid-row-gap: 24px;
+    height: auto;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {

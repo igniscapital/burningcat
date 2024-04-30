@@ -245,9 +245,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__xMwlr
                     )}
                   >
-                    {
-                      "Symbol : $BCAT\nDecimal : 9\nSupply: 100.000.000\n\nLP BURN 100%\nMint Revoke\nContract Renounced\n\nContract Address : "
-                    }
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Symbol : $BCAT\nDecimal : 9\nSupply: 100.000.000\n\nLP BURN 100%\nMint Revoke\nContract Renounced\n\nContract Address : B6TMXTzJvnPA5BtG9iEDCTugy\nTXnJ2B8EuarqUKSsXmt"
+                      : "Symbol : $BCAT\nDecimal : 9\nSupply: 100.000.000\n\nLP BURN 100%\nMint Revoke\nContract Renounced\n\nContract Address : B6TMXTzJvnPA5BtG9iEDCTugyTXnJ2B8EuarqUKSsXmt"}
                   </div>
                 </Stack__>
               </Stack__>
@@ -264,7 +264,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__bkB8
                 )}
                 component={Link}
+                href={"https://twitter.com/burncatsol"}
                 platform={"nextjs"}
+                target={"_blank"}
               >
                 <TwitterRoundsvgIcon
                   className={classNames(projectcss.all, sty.svg__svF3B)}
@@ -278,7 +280,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link___6ZfQa
                 )}
                 component={Link}
+                href={"https://twitter.com/burncatsol"}
                 platform={"nextjs"}
+                target={"_blank"}
               >
                 <TelegramFillSvgrepoComsvgIcon
                   className={classNames(projectcss.all, sty.svg__k92Ea)}
