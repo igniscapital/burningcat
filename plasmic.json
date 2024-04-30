@@ -1,0 +1,111 @@
+{
+  "platform": "nextjs",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "public-files",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "qqJ4x5CVbvUJizr2TxEfw1",
+      "projectApiToken": "coy8fJ34Mkku2v21iRwQredPupA27dFVW2GjJQLCGLY921x3hZl2MB7xEg3xZzR8O1riZG7uo79tj1Wfzg",
+      "projectName": "Burning Cat",
+      "version": "latest",
+      "cssFilePath": "plasmic/burning_cat/plasmic.module.css",
+      "components": [
+        {
+          "id": "ZAPpd8ph-74v",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "qqJ4x5CVbvUJizr2TxEfw1",
+          "renderModuleFilePath": "plasmic/burning_cat/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/burning_cat/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [
+        {
+          "id": "5Lmt9C7J_HwY",
+          "name": "TwitterRoundsvgIcon",
+          "moduleFilePath": "plasmic/burning_cat/icons/PlasmicIcon__TwitterRoundsvg.tsx"
+        },
+        {
+          "id": "WbyUo9-2jjfk",
+          "name": "TelegramFillSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/burning_cat/icons/PlasmicIcon__TelegramFillSvgrepoComsvg.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "EKib7Awfe9O7",
+          "name": "gF_--utS_400x400.jpg",
+          "filePath": "../public/plasmic/burning_cat/images/gFUtS400X400Jpg.jpg"
+        },
+        {
+          "id": "FAw1mNQZ6Jo3",
+          "name": "gF_--utS_400x400-removebg-preview.png",
+          "filePath": "../public/plasmic/burning_cat/images/gFUtS400X400RemovebgPreviewpng.png"
+        },
+        {
+          "id": "qIL40I_nrLY8",
+          "name": "fire background.png",
+          "filePath": "../public/plasmic/burning_cat/images/fireBackgroundpng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "yOJfpthUW92G",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "QTYSU9D8l1mh",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "6McVKAYAZyRW",
+        "name": "Screen",
+        "projectId": "qqJ4x5CVbvUJizr2TxEfw1",
+        "contextFilePath": "plasmic/burning_cat/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "nextjsConfig": {
+    "pagesDir": "../pages"
+  },
+  "cliVersion": "0.1.327",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.327/dist/plasmic.schema.json"
+}
